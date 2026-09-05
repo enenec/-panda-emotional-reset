@@ -1,0 +1,69 @@
+{
+  "name": "panda-emotional-reset",
+  "productName": "熊猫情绪重启计划",
+  "version": "1.0.0",
+  "description": "21 天生活重启计划：和一只温柔的熊猫一起，把生活慢慢找回来。仅用于心理健康自助支持。",
+  "main": "dist-electron/main.js",
+  "author": "Panda Emotional Reset Team",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "dist": "npm run build && electron-builder --win",
+    "generate:licenses": "tsx scripts/generateLicenseCodes.ts",
+    "generate:icon": "tsx scripts/generateIcon.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.14.15",
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "electron": "^31.3.1",
+    "electron-builder": "^24.13.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1",
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2",
+    "vite-plugin-electron": "^0.28.7"
+  },
+  "build": {
+    "appId": "com.panda.emotionalreset",
+    "productName": "熊猫情绪重启计划",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "熊猫情绪重启计划",
+      "artifactName": "PandaEmotionalReset-Setup-${version}.${ext}",
+      "installerLanguages": [
+        "zh_CN"
+      ],
+      "displayLanguageSelector": false
+    }
+  }
+}

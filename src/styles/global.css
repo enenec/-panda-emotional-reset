@@ -1,0 +1,230 @@
+/* ============================================================
+   熊猫情绪重启计划 · 全局样式
+   配色：奶油白 + 熊猫黑 + 柔和竹绿 + 暖黄 + 淡粉 + 淡蓝
+   ============================================================ */
+
+:root {
+  --cream: #FFFDF7;
+  --panda-black: #2F2F2F;
+  --bamboo: #A8D5BA;
+  --bamboo-deep: #6FA98A;
+  --mint-light: #EAF7EE;
+  --warm-yellow: #FFE8A3;
+  --warm-yellow-deep: #8A6B1F;
+  --sky-light: #DCEFFF;
+  --pink-light: #FFE8E8;
+  --crisis-red: #D64545;
+  --crisis-bg: #FFF4F2;
+  --text-main: #3D3A34;
+  --text-soft: #8A8578;
+  --card-bg: #FFFFFF;
+  --line-soft: #EDE8DB;
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 12px;
+  --shadow-soft: 0 8px 24px rgba(47, 47, 47, 0.06);
+  --shadow-hover: 0 12px 28px rgba(47, 47, 47, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC",
+    "Segoe UI", system-ui, sans-serif;
+  background: var(--cream);
+  color: var(--text-main);
+  font-size: 15px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--panda-black);
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--bamboo);
+  color: var(--panda-black);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ddd6c6;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #cbc2ae;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ============ 应用骨架 ============ */
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 28px;
+  background: rgba(255, 253, 247, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(47, 47, 47, 0.06);
+}
+
+.app-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.app-header__name {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--panda-black);
+  letter-spacing: 1px;
+}
+
+.app-header__day {
+  background: var(--mint-light);
+  color: var(--bamboo-deep);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 5px 16px;
+  border-radius: 999px;
+}
+
+.app-main {
+  flex: 1;
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 30px 32px 110px;
+}
+
+.app-footer {
+  text-align: center;
+  font-size: 12.5px;
+  color: var(--text-soft);
+  padding: 0 24px 92px;
+}
+
+/* ============ 装饰背景光斑 ============ */
+
+.deco-blob {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(76px);
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+.deco-blob--bamboo {
+  width: 400px;
+  height: 400px;
+  background: var(--bamboo);
+  top: -140px;
+  left: -120px;
+}
+.deco-blob--yellow {
+  width: 340px;
+  height: 340px;
+  background: var(--warm-yellow);
+  bottom: -120px;
+  right: -100px;
+}
+.deco-blob--sky {
+  width: 280px;
+  height: 280px;
+  background: var(--sky-light);
+  top: 26%;
+  right: 6%;
+}
+
+.page-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* ============ 通用工具 ============ */
+
+.page-title {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.page-subtitle {
+  color: var(--text-soft);
+  margin-bottom: 22px;
+  font-size: 14.5px;
+}
+
+.section-title {
+  font-size: 17.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.section-sub {
+  font-size: 13.5px;
+  color: var(--text-soft);
+  margin-bottom: 14px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--line-soft);
+  margin: 14px 0;
+}
+
+.muted {
+  color: var(--text-soft);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.emoji-lg {
+  font-size: 42px;
+  line-height: 1;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}

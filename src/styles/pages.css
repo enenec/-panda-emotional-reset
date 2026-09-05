@@ -1,0 +1,323 @@
+/* ============================================================
+   各页面样式
+   ============================================================ */
+
+/* ---------- 激活页 ---------- */
+
+.activation-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  position: relative;
+  z-index: 1;
+}
+.activation-card {
+  width: 100%;
+  max-width: 460px;
+  text-align: center;
+  padding: 40px 36px;
+}
+.activation-card__mascot {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.activation-title {
+  font-size: 24px;
+  margin: 14px 0 6px;
+}
+.activation-subtitle {
+  color: var(--text-soft);
+  margin-bottom: 26px;
+  font-size: 14px;
+}
+.activation-page__disclaimer {
+  margin-top: 28px;
+  max-width: 560px;
+  text-align: center;
+  font-size: 12.5px;
+  color: var(--text-soft);
+}
+
+/* ---------- 欢迎页 ---------- */
+
+.welcome-hero {
+  text-align: center;
+  padding: 28px 0 6px;
+}
+.welcome-hero__mascot {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.welcome-title {
+  font-size: 28px;
+  margin: 18px 0 10px;
+}
+.welcome-intro {
+  color: var(--text-soft);
+  max-width: 540px;
+  margin: 0 auto 10px;
+}
+.welcome-notices {
+  max-width: 620px;
+  margin: 22px auto 0;
+}
+.welcome-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+.welcome-progress-hint {
+  margin-top: 14px;
+  font-size: 13.5px;
+  color: var(--bamboo-deep);
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ---------- 初始评估页 ---------- */
+
+.assessment-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 24px 100px;
+  position: relative;
+  z-index: 1;
+}
+.assessment-hero {
+  text-align: center;
+  margin-bottom: 26px;
+}
+.assessment-hero__mascot {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+.assessment-title {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+.assessment-sub {
+  color: var(--text-soft);
+  font-size: 14px;
+}
+.assessment-section {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 24px 28px;
+  margin-bottom: 18px;
+}
+.assessment-section__index {
+  display: inline-block;
+  background: var(--mint-light);
+  color: var(--bamboo-deep);
+  border-radius: 999px;
+  padding: 2px 12px;
+  font-size: 12.5px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.assessment-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 26px;
+}
+.assessment-error {
+  text-align: center;
+  color: var(--crisis-red);
+  font-size: 13.5px;
+  margin-top: 12px;
+}
+
+/* ---------- 今日计划页 ---------- */
+
+.today-hero {
+  text-align: center;
+  margin-bottom: 22px;
+}
+.today-hero__mascot {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.today-badges {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+.day-badge {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  background: #fff;
+  padding: 7px 20px;
+  border-radius: 999px;
+  box-shadow: var(--shadow-soft);
+  font-weight: 600;
+  font-size: 14px;
+}
+.stage-chip {
+  background: var(--warm-yellow);
+  color: var(--warm-yellow-deep);
+  padding: 7px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.stage-goal {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-top: 6px;
+}
+.today-theme {
+  font-size: 26px;
+  margin: 14px 0 6px;
+}
+.encouragement {
+  color: var(--bamboo-deep);
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+.today-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+.today-disclaimer {
+  margin-top: 26px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-soft);
+}
+
+/* ---------- 每日反馈页 ---------- */
+
+.feedback-hero {
+  text-align: center;
+  margin-bottom: 22px;
+}
+.feedback-title {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+.feedback-sub {
+  color: var(--text-soft);
+  font-size: 14px;
+}
+.feedback-section {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 24px 28px;
+  margin-bottom: 18px;
+}
+.feedback-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 26px;
+}
+
+/* ---------- 进度页 ---------- */
+
+.progress-hero {
+  text-align: center;
+  margin-bottom: 22px;
+}
+.progress-title {
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+.progress-sub {
+  color: var(--text-soft);
+  font-size: 14px;
+}
+.progress-section {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 24px 28px;
+  margin-bottom: 18px;
+}
+.progress-encouragement {
+  text-align: center;
+  color: var(--bamboo-deep);
+  font-weight: 600;
+  font-size: 15.5px;
+  margin: 22px 0;
+}
+.progress-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+/* ---------- 内容库页 ---------- */
+
+.library-hero {
+  text-align: center;
+  margin-bottom: 22px;
+}
+.library-title {
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+.library-sub {
+  color: var(--text-soft);
+  font-size: 14px;
+}
+
+/* ---------- 设置页 ---------- */
+
+.settings-title {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+.settings-section {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 22px 26px;
+  margin-bottom: 16px;
+}
+.settings-section__title {
+  font-size: 16.5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ---------- 通用表单区域 ---------- */
+
+.form-section {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 24px 28px;
+  margin-bottom: 18px;
+}
+.form-section__title {
+  font-size: 16.5px;
+  margin-bottom: 4px;
+}
+.form-section__sub {
+  font-size: 13.5px;
+  color: var(--text-soft);
+  margin-bottom: 16px;
+}
